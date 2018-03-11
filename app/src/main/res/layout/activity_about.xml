@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/about_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    tools:context="com.example.omarsalama.k_app7.About">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="35"
+        android:background="@drawable/mission_vision">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="32.5"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:background="@color/color_ay7aga">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:text="Mission"
+            android:textColor="@color/siu"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Build generation that can build first cars’ factory in Egypt which manufactures cars from A to Z. Make a change in R and D of artificial limbs and all medical devices. Build the first skyscraper in Egypt."
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_weight="60" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="32.5"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:background="@color/color_ay7aga">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Vision"
+            android:textColor="@color/siu"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Build a generation that makes industrial revolution through providing the coming generation with technicalities and skills needed.  "
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_weight="70"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+

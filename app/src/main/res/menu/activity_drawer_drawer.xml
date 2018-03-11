@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_help_outline_black_24dp"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_Magazine"
+            android:icon="@drawable/ic_folder_special_black_24dp"
+            android:title="Magazine" />
+        <item
+            android:id="@+id/nav_Projects"
+            android:icon="@drawable/ic_laptop_black_24dp"
+            android:title="Projects"/>
+        <item
+            android:id="@+id/nav_Events"
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="Events"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_Contact"
+                android:icon="@drawable/ic_call_black_24dp"
+                android:title="Contact Us" />
+        </menu>
+    </item>
+
+</menu>
