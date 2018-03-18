@@ -1,5 +1,6 @@
 package com.example.omarsalama.k_app7;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -29,10 +30,11 @@ public class Magazines extends Fragment {
 
     };
 
+    @SuppressLint("InflateParams")
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.layout, null);
+        return inflater.inflate(R.layout.layout,null);
 
     }
 

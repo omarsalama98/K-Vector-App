@@ -18,12 +18,12 @@
         android:layout_height="match_parent"
         android:weightSum="100"
         android:orientation="vertical">
-        <ImageView
+        <!--<ImageView
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="80"
             android:src="@drawable/kvector"
-            android:contentDescription="open" />
+            android:contentDescription="open" />-->
 
 
     </LinearLayout>

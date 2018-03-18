@@ -29,9 +29,10 @@ public class Drawer extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
+
+              /* Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                     .setAction("Action", null).show();*/
+          }
         });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -88,25 +89,18 @@ public class Drawer extends AppCompatActivity
         } else if (id == R.id.nav_about) {
             fragment = new About();
 
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.FramePlaceHolder,fragment);
-            fragmentTransaction.commit();
+
 
         } else if (id == R.id.nav_Magazine) {
             fragment = new Magazines();
 
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.FramePlaceHolder,fragment);
-            fragmentTransaction.commit();
 
         } else if (id == R.id.nav_Projects) {
 
         } else if (id == R.id.nav_Events) {
             fragment = new Events();
 
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.FramePlaceHolder,fragment);
-            fragmentTransaction.commit();
+
 
         } else if (id == R.id.nav_Contact) {
 

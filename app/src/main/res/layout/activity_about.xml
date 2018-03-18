@@ -12,8 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="0px"
         android:layout_weight="35"
-        android:background="@drawable/mission_vision">
+        >
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/magazines"
+            android:src="@drawable/mission_vision" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0px"

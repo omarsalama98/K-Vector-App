@@ -6,19 +6,22 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class About extends Fragment {
-    LinearLayout layout;
+    /*LinearLayout layout;
 
-    public About() {
+    *//*public About() {
         layout = (LinearLayout) layout.findViewById(R.id.about_layout);
-    }
+    }*//*
+*/
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.activity_about, null);
+
     }
 
 
@@ -28,7 +31,7 @@ public class About extends Fragment {
 
     }
 
-    private void setContentView(int activity_about) {
+    /*private void setContentView(int activity_about) {
 
-    }
+    }*/
 }

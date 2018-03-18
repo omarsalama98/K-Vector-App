@@ -5,38 +5,56 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ProgressBar;
 
 
 
 public class Main extends AppCompatActivity {
 
-    ProgressBar progressBar= (ProgressBar)findViewById(R.id.progressBar);
+    ProgressBar progressBar;
+   // Button continueBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button continueBtn = findViewById(R.id.continueBtn);
+        progressBar = (ProgressBar) findViewById(R.id.progressBar);
+       /* continueBtn = (Button) findViewById(R.id.continueBtn);
         continueBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent continueint = new Intent(Main.this,Drawer.class);
-                progressBar.setVisibility(View.VISIBLE);
-                Runnable runnable = new Runnable() {
-                    @Override
-                    public void run() {
+                    Intent intent = new Intent(Main.this,Drawer.class);
+                    progressBar.setVisibility(View.VISIBLE);
+                    Runnable runnable = new Runnable() {
+                        @Override
+                        public void run() {
 
-                    }
-                };
-                Handler handler = new Handler();
-                handler.postDelayed(runnable,4000);
-                startActivity(continueint);
-            }
+                        }
+                    };
+                    Handler handler = new Handler();
+
+                        handler.postDelayed(runnable, 4000);
+                        startActivity(intent);
+                    }*//*
+
+
         });
         progressBar.setVisibility(View.INVISIBLE);
-    }
+    }*/
+        Intent intent = new Intent(Main.this,Drawer.class);
+        progressBar.setVisibility(View.VISIBLE);
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
 
+            }
+        };
+        Handler handler = new Handler();
+
+        handler.postDelayed(runnable,3000);
+        //progressBar.setVisibility(View.INVISIBLE);
+        startActivity(intent);
+
+
+}
 }
