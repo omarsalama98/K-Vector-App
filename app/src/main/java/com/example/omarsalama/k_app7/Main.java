@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.ProgressBar;
 
@@ -41,6 +42,7 @@ public class Main extends AppCompatActivity {
         });
         progressBar.setVisibility(View.INVISIBLE);
     }*/
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
         Intent intent = new Intent(Main.this,Drawer.class);
         progressBar.setVisibility(View.VISIBLE);
         Runnable runnable = new Runnable() {
@@ -52,7 +54,7 @@ public class Main extends AppCompatActivity {
         Handler handler = new Handler();
 
         handler.postDelayed(runnable,3000);
-        //progressBar.setVisibility(View.INVISIBLE);
+        progressBar.setVisibility(View.GONE);
         startActivity(intent);
 
 

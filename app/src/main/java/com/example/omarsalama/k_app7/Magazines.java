@@ -41,7 +41,7 @@ public class Magazines extends Fragment {
     @Override
     public void onViewCreated(View view , @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        gridView = (GridView) gridView.findViewById(R.id.griview);
+        gridView = (GridView) view.findViewById(R.id.griview);
 
         GridAdapter gridAdapter = new GridAdapter(getContext(), values, images);
 

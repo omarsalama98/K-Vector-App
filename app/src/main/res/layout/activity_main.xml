@@ -14,7 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="60"
-        app:srcCompat="@drawable/kvector"
+        app:srcCompat="@drawable/kvector1"
+        android:contentDescription="s"
       />
     <RelativeLayout
         android:layout_width="match_parent"
