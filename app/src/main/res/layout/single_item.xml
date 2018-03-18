@@ -9,15 +9,16 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:contentDescription="@string/magazines"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textiew"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"/>
 
 
 
