@@ -9,12 +9,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:contentDescription="@string/magazines"/>
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignStart="@+id/textiew"
+        android:layout_alignTop="@+id/textiew"
+        android:contentDescription="@string/magazines" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:id="@+id/textiew"
         android:gravity="center"

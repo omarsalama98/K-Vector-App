@@ -15,17 +15,17 @@ import android.widget.GridView;
 public class Magazines extends Fragment {
     GridView gridView;
     String[] values = {
-            "ay 7aga",
-            "wala 7aga",
-            "kol 7aga",
-            "ay 5ara"
+            "روح تركها جسدها",
+            "كائن السيارة العجيب",
+            "حياتي وكوب قهوة",
+            "لدغة السقيع"
 
     };
     int[] images = {
             R.drawable.spirit,
             R.drawable.cars,
-            R.drawable.artiintelli,
-            R.drawable.psycho
+            R.drawable.coffee,
+            R.drawable.frost
 
 
     };
@@ -55,7 +55,21 @@ public class Magazines extends Fragment {
                     spirit = new Intent(getActivity(), spirit.class);
                     startActivity(spirit);
                 }
-
+                else if (position==1){
+                    Intent cars;
+                    cars = new Intent(getActivity(), Cars.class);
+                    startActivity(cars);
+                }
+                else if (position==2){
+                    Intent coffee;
+                    coffee = new Intent(getActivity(), Coffee.class);
+                    startActivity(coffee);
+                }
+                else if (position==3){
+                    Intent frost;
+                    frost = new Intent(getActivity(), Snowbite.class);
+                    startActivity(frost);
+                }
             }
         });
 

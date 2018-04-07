@@ -2,31 +2,47 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.omarsalama.k_app7">
-    <uses-permission android:name="android.permission.INTERNET">
 
-    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:fullBackupContent="@xml/backup_descriptor"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Main">
+        <activity
+            android:name=".Main"
+            android:theme="@style/Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".spirit" />
+        <activity android:name=".spirit">
+            <meta-data
+                android:name="android.support.PARENT.ACTIVITY"
+                android:value=".spirit" />
+        </activity>
         <activity
             android:name=".Drawer"
             android:label="@string/title_activity_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
-
+       <!-- <activity android:name=".Home" />-->
+        <activity android:name=".Cars">
+            <meta-data
+                android:name="android.support.PARENT.ACTIVITY"
+                android:value=".Cars" />
+        </activity>
+        <activity android:name=".Coffee" />
+        <activity android:name=".Snowbite" />
+        <activity android:name=".Academic" />
+       <!-- <activity android:name=".Projects" />-->
+        <activity android:name=".android"></activity>
     </application>
 
 </manifest>

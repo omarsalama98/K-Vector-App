@@ -2,11 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlay"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.omarsalama.k_app7.Main"
+    android:orientation="vertical"
     android:weightSum="100"
-    android:orientation="vertical">
+    tools:context="com.example.omarsalama.k_app7.Main">
 
 
     <ImageView
@@ -14,16 +15,15 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="60"
-        app:srcCompat="@drawable/kvector1"
         android:contentDescription="s"
-      />
+        app:srcCompat="@drawable/kvector1" />
+
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="0px"
         android:layout_weight="17"
-        android:orientation="horizontal"
-        android:id="@+id/relativeLayout"
-       >
+        android:orientation="horizontal">
 
 
         <TextView
@@ -63,11 +63,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_weight="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_weight="10"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </LinearLayout>

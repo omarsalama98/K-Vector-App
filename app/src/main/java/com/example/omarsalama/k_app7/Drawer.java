@@ -24,16 +24,16 @@ public class Drawer extends AppCompatActivity
         setContentView(R.layout.activity_drawer);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+/*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-              /* Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                     .setAction("Action", null).show();*/
+              *//* Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                     .setAction("Action", null).show();*//*
           }
-        });
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -63,7 +63,7 @@ public class Drawer extends AppCompatActivity
         return true;
     }
 
-    @Override
+   /* @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -76,7 +76,7 @@ public class Drawer extends AppCompatActivity
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -85,6 +85,7 @@ public class Drawer extends AppCompatActivity
         int id = item.getItemId();
         Fragment fragment = null ;
         if (id == R.id.nav_Home) {
+            fragment  = new Home();
 
         } else if (id == R.id.nav_about) {
             fragment = new About();
@@ -96,6 +97,7 @@ public class Drawer extends AppCompatActivity
 
 
         } else if (id == R.id.nav_Projects) {
+            fragment= new Projects();
 
         } else if (id == R.id.nav_Events) {
             fragment = new Events();
