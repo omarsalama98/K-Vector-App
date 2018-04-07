@@ -1,16 +1,13 @@
 package com.example.omarsalama.k_app7;
 
-import android.app.Fragment;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.support.v4.app.Fragment;
 
-public class Home extends android.support.v4.app.Fragment{
+public class Home extends Fragment {
 
     @Nullable
     @Override

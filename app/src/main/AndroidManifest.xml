@@ -32,7 +32,7 @@
             android:name=".Drawer"
             android:label="@string/title_activity_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
-       <!-- <activity android:name=".Home" />-->
+        <!-- <activity android:name=".Home" /> -->
         <activity android:name=".Cars">
             <meta-data
                 android:name="android.support.PARENT.ACTIVITY"
@@ -41,8 +41,11 @@
         <activity android:name=".Coffee" />
         <activity android:name=".Snowbite" />
         <activity android:name=".Academic" />
-       <!-- <activity android:name=".Projects" />-->
-        <activity android:name=".android"></activity>
+        <!-- <activity android:name=".Projects" /> -->
+        <activity android:name=".android" />
+        <activity android:name=".Robotics" />
+        <activity android:name=".SoftSkills" />
+        <activity android:name=".WebDesign"></activity>
     </application>
 
 </manifest>
