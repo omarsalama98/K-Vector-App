@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="#808090"
+        android:text="• Engine and Transmission Workshop."
+        android:textSize="24sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        android:text=" Participants learn:                                                     1. Basic engine layout.                                                     2. Supplying systems (Intake, exhaust, lubrication and cooling).                                                            3. turbo and super charger.                                                           4. Function of transmission.                                                                       5. Manual transmission and transaxle.                                                                        6. Driving moods (4WD ,2WD and all WD).                                                                7. Differential and CV joints.                                                                          8. Automatic transmission. "
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimaryDark"/>
+</LinearLayout>

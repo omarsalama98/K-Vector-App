@@ -46,7 +46,11 @@
         <activity android:name=".Robotics" />
         <activity android:name=".SoftSkills" />
         <activity android:name=".WebDesign" />
-        <activity android:name=".Automotive"></activity>
+        <activity android:name=".Automotive" />
+        <activity android:name=".Engine" />
+        <activity android:name=".AeroDynamics" />
+        <activity android:name=".Suspension" />
+        <activity android:name=".Juniors"></activity>
     </application>
 
 </manifest>

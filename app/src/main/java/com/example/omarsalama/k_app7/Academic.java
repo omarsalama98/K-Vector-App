@@ -23,6 +23,7 @@ public class Academic extends AppCompatActivity {
                 startActivity(android);
             }
         });
+
         Button roboticsBtn = (Button)findViewById(R.id.roboticsBtn);
         roboticsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +32,7 @@ public class Academic extends AppCompatActivity {
                 startActivity(robotics);
             }
         });
+
         Button wdBtn = (Button)findViewById(R.id.wdBtn);
         wdBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,12 +41,22 @@ public class Academic extends AppCompatActivity {
                 startActivity(webdesign);
             }
         });
+
         Button ssBtn = (Button)findViewById(R.id.ssBtn);
         ssBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent softskills = new Intent(Academic.this,SoftSkills.class);
                 startActivity(softskills);
+            }
+        });
+
+        Button autoBtn = (Button)findViewById(R.id.autoBtn);
+        autoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent automotive = new Intent(Academic.this,Automotive.class);
+                startActivity(automotive);
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

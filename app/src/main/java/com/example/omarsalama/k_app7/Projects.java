@@ -34,5 +34,14 @@ public class Projects extends Fragment {
            }
 
        });
+        Button juniorBtn = (Button)view.findViewById(R.id.juniorBtn);
+        juniorBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent junior = new Intent(getActivity(),Juniors.class);
+                startActivity(junior);
+            }
+        });
+
     }
 }

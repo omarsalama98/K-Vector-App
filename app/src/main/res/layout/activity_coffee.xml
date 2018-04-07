@@ -10,7 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.omarsalama.k_app7.Cars"
+    tools:context="com.example.omarsalama.k_app7.Coffee"
 
     >
 
@@ -45,7 +45,7 @@
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
-            android:layout_height="2350dp"
+            android:layout_height="1000dp"
             android:layout_weight="30"
             android:text="@string/coffee"
             android:textColor="@android:color/background_dark"
