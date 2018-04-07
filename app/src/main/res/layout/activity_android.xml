@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="399dp"
+        android:text="Participants learn:
+                                                                            1. Introduction to java                                                                       2. OOP.                                                                         3. XML and layouts.                                                                      4. Bundles.                                                                          5. Intents. "
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimaryDark"/>
+</LinearLayout>

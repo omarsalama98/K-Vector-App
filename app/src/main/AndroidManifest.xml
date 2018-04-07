@@ -45,7 +45,8 @@
         <activity android:name=".android" />
         <activity android:name=".Robotics" />
         <activity android:name=".SoftSkills" />
-        <activity android:name=".WebDesign"></activity>
+        <activity android:name=".WebDesign" />
+        <activity android:name=".Automotive"></activity>
     </application>
 
 </manifest>
