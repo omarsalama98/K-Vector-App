@@ -2,19 +2,15 @@
 <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">-->
-<GridView
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/griview"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/griview"
-    android:horizontalSpacing="5dp"
-    android:stretchMode="columnWidth"
-
-    android:numColumns="auto_fit"
+    android:columnWidth="200dp"
     android:gravity="center"
-    android:columnWidth="100dp"
-    android:layout_columnSpan="60"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    </GridView>
+    android:horizontalSpacing="10dp"
+    android:numColumns="2"
+    android:stretchMode="columnWidth"/>
 <!--
 </LinearLayout>
 -->

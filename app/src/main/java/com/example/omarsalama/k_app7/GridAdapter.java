@@ -45,9 +45,9 @@ class GridAdapter extends BaseAdapter {
               view = new View(context);
               view = layoutInflater.inflate(R.layout.single_item,null);
               ImageView imageView = (ImageView)view.findViewById(R.id.imageView);
-              TextView textView = (TextView)view.findViewById(R.id.textiew);
+              /*TextView textView = (TextView)view.findViewById(R.id.textiew);*/
               imageView.setImageResource(images[position]);
-              textView.setText(values[position]);
+           /*   textView.setText(values[position]);*/
 
 
           }

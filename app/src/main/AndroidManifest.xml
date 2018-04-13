@@ -50,7 +50,7 @@
         <activity android:name=".Engine" />
         <activity android:name=".AeroDynamics" />
         <activity android:name=".Suspension" />
-        <activity android:name=".Juniors"></activity>
+        <activity android:name=".Juniors"/>
     </application>
 
 </manifest>
