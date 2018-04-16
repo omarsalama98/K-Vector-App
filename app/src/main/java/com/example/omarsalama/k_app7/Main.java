@@ -28,8 +28,8 @@ public class Main extends AppCompatActivity {
         RotateAnimation rotate = new RotateAnimation(0,360f,Animation.RELATIVE_TO_SELF,0.5f, Animation.RELATIVE_TO_SELF,0.5f);
 
         rotate.setInterpolator(new LinearInterpolator());
-        rotate.setDuration(200);
-        rotate.setRepeatCount(20);
+        rotate.setDuration(250);
+        rotate.setRepeatCount(3);
 
         findViewById(R.id.imageView2).startAnimation(rotate);
 
