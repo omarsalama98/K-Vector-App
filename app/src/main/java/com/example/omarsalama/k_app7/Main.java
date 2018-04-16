@@ -7,6 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
 import android.widget.ProgressBar;
 
 import spencerstudios.com.bungeelib.Bungee;
@@ -22,6 +25,15 @@ public class Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        RotateAnimation rotate = new RotateAnimation(0,360f,Animation.RELATIVE_TO_SELF,0.5f, Animation.RELATIVE_TO_SELF,0.5f);
+
+        rotate.setInterpolator(new LinearInterpolator());
+        rotate.setDuration(200);
+        rotate.setRepeatCount(20);
+
+        findViewById(R.id.imageView2).startAnimation(rotate);
+
+        progressBar.setVisibility(View.INVISIBLE);
        /* continueBtn = (Button) findViewById(R.id.continueBtn);
         continueBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +60,7 @@ public class Main extends AppCompatActivity {
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-            progressBar.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.INVISIBLE);
 
             }
         };
@@ -67,8 +79,6 @@ public class Main extends AppCompatActivity {
             }
         };
          handler.postDelayed(runnable1,1500);
-
-
 
 
 
