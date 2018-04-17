@@ -6,11 +6,18 @@
     android:layout_height="match_parent"
     tools:context="com.example.omarsalama.k_app7.Events"
     android:orientation="vertical"
-    android:weightSum="100">
+    android:weightSum="100"
+    android:background="@android:color/black">
 
 
-    <WebView
+    <!--<WebView
         android:id="@+id/eventos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" />-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/coming_soon"/>
+
 </FrameLayout>

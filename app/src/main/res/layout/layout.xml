@@ -10,7 +10,8 @@
     android:gravity="center"
     android:horizontalSpacing="10dp"
     android:numColumns="2"
-    android:stretchMode="columnWidth"/>
+    android:stretchMode="columnWidth"
+    android:background="@color/color_ay7aga"/>
 <!--
 </LinearLayout>
 -->

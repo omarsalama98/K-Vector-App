@@ -25,14 +25,14 @@ public class Events extends Fragment {
    @Override
     public void onViewCreated(View view , @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view,savedInstanceState);
-       eventos = (WebView) view.findViewById(R.id.eventos);
+      /* eventos = (WebView) view.findViewById(R.id.eventos);
 
 
        eventos.setWebViewClient(new WebViewClient());
 
 
        eventos.loadUrl("http://www.kvectorfoundation.com/events/events.php");
-
+*/
 
 
     }
