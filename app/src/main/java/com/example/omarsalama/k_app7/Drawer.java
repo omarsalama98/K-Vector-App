@@ -15,6 +15,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import spencerstudios.com.bungeelib.Bungee;
+
 public class Drawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -24,11 +26,12 @@ public class Drawer extends AppCompatActivity
         setContentView(R.layout.activity_drawer);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        Bungee.slideDown(this);
         FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
         tx.replace(R.id.FramePlaceHolder,new Home());
         tx.commit();
 
-        setTitle("K-Vector");
+        setTitle("K Vector foundation");
 /*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -85,38 +88,50 @@ public class Drawer extends AppCompatActivity
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(final MenuItem item) {
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
-        Fragment fragment = null ;
-        if (id == R.id.nav_Home) {
-            fragment  = new Home();
+       Runnable runnable = new Runnable() {
+           @Override
+           public void run() {
+               int id = item.getItemId();
+               Fragment fragment = null ;
+               switch (id) {
+                   case R.id.nav_Home:
+                       fragment = new Home();
 
-        } else if (id == R.id.nav_about) {
-            fragment = new About();
-
-
-
-        } else if (id == R.id.nav_Magazine) {
-            fragment = new Magazines();
-
-
-        } else if (id == R.id.nav_Projects) {
-            fragment= new Projects();
-
-        } else if (id == R.id.nav_Events) {
-            fragment = new Events();
+                       break;
+                   case R.id.nav_about:
+                       fragment = new About();
 
 
+                       break;
+                   case R.id.nav_Magazine:
+                       fragment = new Magazines();
 
-        } else if (id == R.id.nav_Contact) {
 
-        }
-        if (fragment != null) {
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.FramePlaceHolder,fragment);
-            fragmentTransaction.commit();
-        }
+                       break;
+                   case R.id.nav_Projects:
+                       fragment = new Projects();
+
+                       break;
+                   case R.id.nav_Events:
+                       fragment = new Events();
+
+
+                       break;
+                   case R.id.nav_Contact:
+
+                       break;
+               }
+               if (fragment != null) {
+                   FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                   fragmentTransaction.replace(R.id.FramePlaceHolder,fragment);
+                   fragmentTransaction.commit();
+               }
+           }
+       };
+       Thread thread= new Thread(runnable);
+       thread.run();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

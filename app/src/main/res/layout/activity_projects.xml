@@ -1,31 +1,438 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="1">
 
-    <TextView
-        android:id="@+id/Projects"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.2"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Projects"
-        android:textSize="@dimen/abc_action_button_min_width_overflow_material" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/academicBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.2"
-        android:text="Academic" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Our Projects"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/juniorBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.2"
-        android:text="Juniors" />
+        <TextView
+            android:id="@+id/academic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Academic"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
 
-</LinearLayout>
+        <LinearLayout
+            android:id="@+id/academic_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="1-Robotics"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_ay7aga"
+                android:textSize="20sp" />
+
+            <view
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:solidColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/humanoid_robot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="
+• Basics Level
+o Basics Level consist of basics of Electronics,
+Mechanics, Programming and Arduino.
+"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <view
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:solidColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="false"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/atmega32" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Advanced Level
+o Advanced Level will consist of :
+1. C programming and data structure algorithms.
+2. Embedded system concept.
+3. Embedded C for microcontrollers.
+4. AVR and AVR programming.
+5. Communication protocols.
+6. Motors (DC, Stepper, Servo).
+7. LCD, seven Segment, key bad.
+"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <view
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:solidColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="2-AutoMotive"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_ay7aga"
+                android:textSize="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="233dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/auto_header_light" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="It’s consists of 3 workshops.
+• Engine and Transmission Workshop.
+Participants learn:
+1. Basic engine layout.
+2. Supplying systems (Intake, exhaust, lubrication and cooling).
+3. turbo and super charger.
+4. Function of transmission.
+5. Manual transmission and transaxle.
+6. Driving moods (4WD ,2WD and all WD).
+7. Differential and CV joints.
+8. Automatic transmission.
+• Suspension,Steering and Breaks workshop.
+Participants learn:
+1. Suspension layout
+2. Suspension system.
+3. Brake system.
+4. Steering system.
+5. Technologies.
+• Aero Dynamics Workshop.
+Participants learn:
+1. Basic of fluid mechanics and aerodynamics.
+2. Aerodynamic devices.
+3. Aerodynamics in super cars.
+4. Formula cars.
+5. Technologies.
+
+"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <view
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:solidColor="@android:color/black" />
+
+
+            <TextView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="3-Android"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_ay7aga"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/android_a" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Participants learn
+1. Introduction to java.
+2. OOP.
+3. XML along with layouts.
+4. Navigation
+5- Storage
+"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <view
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:solidColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="4-Web Design"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_ay7aga"
+                android:textSize="20sp" />
+
+            <view
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:solidColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/webdesign" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• Participants learn CSS, HTML and JavaScript."
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="5-Soft Skills"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_ay7aga"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/softskills" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="• The first workshop of non-technical part of k’18 academic project.
+• The workshop consists of Presentations Skills, Communications
+Skills, Problem Solving.
+"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <view
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:shadowColor="@color/colorPrimaryDark"
+                android:solidColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="6-Photoshop"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_ay7aga"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/photoshop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•The second workshop of non-technical part of k’18 academic project.
+• Participants learn basics of graphic design concepts, basics of
+tool and commands, Typography, Retouching and Logo designing.
+"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Events"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/events_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="
+-Opening Event
+-This Event is for starting K’18 workshops, welcoming and motivating Our Participants.
+-Career launcher 5th edition
+-We do seminars that support our vision. We deal with professional companies in every branch to give the applicants this seminars
+-Career day
+-Event for showing the output of our Academic’s workshops.
+-Closing
+-We will honor our members and participants and celebrating K vector's 7th year anniversary.
+"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Juniors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Juniors"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/juniors_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" *Workshops
+1-Robotics
+• Juniors will learn basics of Electronics, Mechanics, Programming and Arduino.
+2-Soft Skills
+• Juniors will learn Time Management, Problem solving and Communication Skills.
+
+"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Magazine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Magazine"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/Magazine_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" A project for K’18 with a specific vision, mission and objectives.
+--Vision
+Enhancing the perspective of remote learning for technical and nontechnical tracks throughout written output.
+--Mission
+Setting an intellectual individual aware of as much aspects a variables around him as possible and capable of being the core of change.
+
+"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

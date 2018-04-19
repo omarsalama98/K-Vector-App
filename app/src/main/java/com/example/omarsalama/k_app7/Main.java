@@ -1,11 +1,9 @@
 package com.example.omarsalama.k_app7;
 
-import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.LinearInterpolator;
@@ -78,9 +76,8 @@ public class Main extends AppCompatActivity {
 
             }
         };
-         handler.postDelayed(runnable1,1500);
-
-
+         handler.postDelayed(runnable1,3500);
+        Bungee.slideUp(this);
 
 }
 }
