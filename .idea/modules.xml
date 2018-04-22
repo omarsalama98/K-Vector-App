@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://C:\Users\Hady\AndroidStudioProjects\Team-Z app\KApp7.iml" filepath="C:\Users\Hady\AndroidStudioProjects\Team-Z app\KApp7.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Team-Z app.iml" filepath="$PROJECT_DIR$/Team-Z app.iml" />
+      <module fileurl="file://C:\Users\Omar Salama\AndroidStudioProjects\TeamZ\Team-Z app.iml" filepath="C:\Users\Omar Salama\AndroidStudioProjects\TeamZ\Team-Z app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TeamZ.iml" filepath="$PROJECT_DIR$/TeamZ.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Omar Salama\AndroidStudioProjects\TeamZ\app\app.iml" filepath="C:\Users\Omar Salama\AndroidStudioProjects\TeamZ\app\app.iml" />
     </modules>
   </component>
 </project>

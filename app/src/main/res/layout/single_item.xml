@@ -11,7 +11,10 @@
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="150dp"
-        android:contentDescription="@string/magazines" />
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/magazines"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter" />
     <!--android:layout_alignStart="@+id/textiew"
           android:layout_alignTop="@+id/textiew"-->
     <!--<TextView

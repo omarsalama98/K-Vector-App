@@ -42,10 +42,10 @@
                 android:padding="5dp"
                 android:text="1-Robotics"
                 android:textAlignment="textStart"
-                android:textColor="@color/color_ay7aga"
+                android:textColor="@color/siu"
                 android:textSize="20sp" />
 
-            <view
+            <View
                 android:layout_width="150dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
@@ -73,10 +73,11 @@ Mechanics, Programming and Arduino.
 "
                     android:textAlignment="viewStart"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"/>
             </LinearLayout>
 
-            <view
+            <View
                 android:layout_width="150dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
@@ -112,10 +113,11 @@ o Advanced Level will consist of :
 "
                     android:textAlignment="viewStart"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"/>
             </LinearLayout>
 
-            <view
+            <View
                 android:layout_width="150dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
@@ -129,7 +131,7 @@ o Advanced Level will consist of :
                 android:padding="5dp"
                 android:text="2-AutoMotive"
                 android:textAlignment="textStart"
-                android:textColor="@color/color_ay7aga"
+                android:textColor="@color/siu"
                 android:textSize="25dp" />
 
             <LinearLayout
@@ -175,11 +177,12 @@ Participants learn:
 "
                     android:textAlignment="viewStart"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"/>
             </LinearLayout>
 
 
-            <view
+            <View
                 android:layout_width="150dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
@@ -196,7 +199,7 @@ Participants learn:
                 android:padding="5dp"
                 android:text="3-Android"
                 android:textAlignment="textStart"
-                android:textColor="@color/color_ay7aga"
+                android:textColor="@color/siu"
                 android:textSize="20sp" />
 
             <LinearLayout
@@ -221,10 +224,11 @@ Participants learn:
 "
                     android:textAlignment="viewStart"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"/>
             </LinearLayout>
 
-            <view
+            <View
                 android:layout_width="150dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
@@ -238,10 +242,10 @@ Participants learn:
                 android:padding="5dp"
                 android:text="4-Web Design"
                 android:textAlignment="textStart"
-                android:textColor="@color/color_ay7aga"
+                android:textColor="@color/siu"
                 android:textSize="20sp" />
 
-            <view
+            <View
                 android:layout_width="150dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
@@ -265,7 +269,8 @@ Participants learn:
                     android:text="• Participants learn CSS, HTML and JavaScript."
                     android:textAlignment="viewStart"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"/>
             </LinearLayout>
 
             <TextView
@@ -274,7 +279,7 @@ Participants learn:
                 android:padding="5dp"
                 android:text="5-Soft Skills"
                 android:textAlignment="textStart"
-                android:textColor="@color/color_ay7aga"
+                android:textColor="@color/siu"
                 android:textSize="20sp" />
 
             <LinearLayout
@@ -296,10 +301,11 @@ Skills, Problem Solving.
 "
                     android:textAlignment="viewStart"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"/>
             </LinearLayout>
 
-            <view
+            <View
                 android:layout_width="150dp"
                 android:layout_height="1dp"
                 android:layout_gravity="center"
@@ -313,7 +319,7 @@ Skills, Problem Solving.
                 android:padding="5dp"
                 android:text="6-Photoshop"
                 android:textAlignment="textStart"
-                android:textColor="@color/color_ay7aga"
+                android:textColor="@color/siu"
                 android:textSize="20sp" />
 
             <LinearLayout
@@ -335,7 +341,8 @@ tool and commands, Typography, Retouching and Logo designing.
 "
                     android:textAlignment="viewStart"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -369,8 +376,8 @@ tool and commands, Typography, Retouching and Logo designing.
 -We will honor our members and participants and celebrating K vector's 7th year anniversary.
 "
                 android:textAlignment="textStart"
-                android:textColor="@android:color/holo_red_light"
-                android:textSize="12sp" />
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <TextView
@@ -400,8 +407,8 @@ tool and commands, Typography, Retouching and Logo designing.
 
 "
                 android:textAlignment="textStart"
-                android:textColor="@android:color/holo_red_light"
-                android:textSize="12sp" />
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp" />
         </LinearLayout>
 
         <TextView
@@ -431,8 +438,8 @@ Setting an intellectual individual aware of as much aspects a variables around h
 
 "
                 android:textAlignment="textStart"
-                android:textColor="@android:color/holo_red_light"
-                android:textSize="12sp" />
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

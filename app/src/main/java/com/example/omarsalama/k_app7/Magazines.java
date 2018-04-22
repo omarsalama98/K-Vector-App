@@ -24,9 +24,9 @@ public class Magazines extends Fragment {
     };
     int[] images = new int[] {
             R.drawable.spirit,
-            R.drawable.cars,
-            R.drawable.coffee,
-            R.drawable.frost
+            R.drawable.car,
+            R.drawable.coff,
+            R.drawable.snow
     };
 
     @SuppressLint("InflateParams")

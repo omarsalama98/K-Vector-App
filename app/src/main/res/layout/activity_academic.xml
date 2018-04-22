@@ -16,7 +16,8 @@
         android:id="@+id/roboticsBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Robotics" />
+        android:text="Robotics"
+        android:textColor="@color/colorPrimaryDark"/>
 
     <Button
         android:id="@+id/autoBtn"
