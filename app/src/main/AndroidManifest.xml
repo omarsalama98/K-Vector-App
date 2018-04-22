@@ -40,17 +40,7 @@
         </activity>
         <activity android:name=".Coffee" />
         <activity android:name=".Snowbite" />
-        <activity android:name=".Academic" />
         <!-- <activity android:name=".Projects" /> -->
-        <activity android:name=".android" />
-        <activity android:name=".Robotics" />
-        <activity android:name=".SoftSkills" />
-        <activity android:name=".WebDesign" />
-        <activity android:name=".Automotive" />
-        <activity android:name=".Engine" />
-        <activity android:name=".AeroDynamics" />
-        <activity android:name=".Suspension" />
-        <activity android:name=".Juniors"/>
     </application>
 
 </manifest>
